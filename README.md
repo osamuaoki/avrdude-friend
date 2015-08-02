@@ -1,12 +1,13 @@
 avrdude-friend
 ==============
 
-$(echo "2014-09-14 Osamu Aoki <osamu#debian.org>" | sed 's/#/@/')
+    $(echo "2014-09-14 Osamu Aoki <osamu#debian.org>" | sed 's/#/@/')
 
 == Scripts related to avrdude ==
 
  * Makefile: burn arduino flash to ATMega328P using TTL-232R-5V etc.
  * 0002-avrdude-ft245r-reset.patch: patch to fix ft232r chip as isp
+   Fixed in Debian avrdude (6.1-2) See Bug #760764 (Thu, 11 Sep 2014)
  * .avrduderc: additional definition
 
 Please read http://goofing-with-computer.blogspot.jp/ (Mostly in Japanese)
