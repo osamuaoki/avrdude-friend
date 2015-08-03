@@ -1,3 +1,5 @@
+# This file is copied to user's home directory
+#
 # There is a ATmega328P kit PCB called "uncompatino".
 # This board allows ISP via its on-board FT232R.
 # This is designed like Arduino Duemilanove but has no standard ICPS header.

@@ -2,13 +2,13 @@
 PARTS = -p ATmega328P
 
 # programmer
-#PROG = -c ttl232r
-PROG = -c uncompatino
+PROG = -c ttl232r
+#PROG = -c uncompatino
 
 # Baudrate (-b): default 150000
 
 # Command (fast)
-AVRDUDE = sudo avrdude $(PARTS) $(PROG)
+AVRDUDE = sudo HOME=$(HOME) avrdude $(PARTS) $(PROG) 
 
 HEXFILE = /usr/share/arduino/hardware/arduino/bootloaders/atmega/ATmegaBOOT_168_atmega328.hex
 
@@ -27,7 +27,7 @@ reset:
 # burn Arduino flash Atmega328P 16 MHz
 set:
 	# lfuse: ext. Xtal 16 MHz clock division 1
-	$(AVRDUDE0) -U lfuse:w:0xff:m
+	$(AVRDUDE) -U lfuse:w:0xff:m
 	# hfuse: EEPROM saved / set bootsize 11 = 256 words/ reset set 0x3f00
 	$(AVRDUDE) -U hfuse:w:0xd6:m
 	# efuse: brown out at ~ 2.5 V
