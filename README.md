@@ -1,21 +1,25 @@
-avrdude-friend
-==============
+# avrdude-friend
+
+<!---
+vim: tw=74 ai ts=4 sts=4 expandtab:
+-->
 
     $(echo "2014-09-14 Osamu Aoki <osamu#debian.org>" | sed 's/#/@/')
 
-== Scripts related to avrdude ==
+## Scripts related to avrdude
 
- * Makefile: burn arduino flash to ATMega328P using TTL-232R-5V etc.
- * 0002-avrdude-ft245r-reset.patch: patch to fix ft232r chip as isp
-   Fixed in Debian avrdude (6.1-2) See Bug #760764 (Thu, 11 Sep 2014)
- * .avrduderc: additional definition
+* Makefile: burn arduino flash to ATMega328P using TTL-232R-5V etc.
+* 0002-avrdude-ft245r-reset.patch: patch to fix ft232r chip as isp
+    * Fixed in Debian avrdude (6.1-2) See Bug #760764 (Thu, 11 Sep 2014)
+    * Fixed in the upstream
+* .avrduderc: additional definition
+    * No more needed since fixed in the upstream
 
 Please read http://goofing-with-computer.blogspot.jp/ (Mostly in Japanese)
 You can contact me in Japanese or English.
+## LICENSE
 
-== LICENSE ==
-
-Unless othewise stated, all these files in this tarball/git-repo are ilicensed
+Unless otherwise stated, all these files in this tarball/git-repo are licensed
 as follows:
 
 Permission is hereby granted, free of charge, to any person obtaining a
