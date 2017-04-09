@@ -4,7 +4,12 @@
 vim: tw=74 ai ts=4 sts=4 expandtab:
 -->
 
-    $(echo "2014-09-14 Osamu Aoki <osamu#debian.org>" | sed 's/#/@/')
+    $(echo "2017-04-09 Osamu Aoki <osamu#debian.org>" | sed 's/#/@/')
+
+Since this patch is accepted in the upstream, this is only FYI.
+
+I will use this repo's wiki to record some information related to AVR
+systems I play with.  See https://github.com/osamuaoki/avrdude-friend/wiki
 
 ## Scripts related to avrdude
 
@@ -17,6 +22,7 @@ vim: tw=74 ai ts=4 sts=4 expandtab:
 
 Please read http://goofing-with-computer.blogspot.jp/ (Mostly in Japanese)
 You can contact me in Japanese or English.
+
 ## LICENSE
 
 Unless otherwise stated, all these files in this tarball/git-repo are licensed
